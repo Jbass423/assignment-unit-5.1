@@ -9,9 +9,18 @@ console.log('***** Object Practice *****')
   - Also give it an array 'favThreeFoods'
 */
 const me = {
+  firstName: " Joshua " ,
+  lastname: " Bass " ,
+  hasSublings: false ,
+  shoeCount: 5 ,
+  favThreefoods : ['steak', 'tacos', 'pizza'],
   // TODO - add properties here
 };
 console.log('A little about me:', me);
+
+// object literal about me 
+
+
 
 /* 2. Accessing object properties.
   - Create a variable called fullName 
@@ -20,12 +29,20 @@ console.log('A little about me:', me);
   - Console.log fullName
 */
 
+let fullName = me.firstName + me.lastname
+console.log(fullName);
+
+// varible using items in a object literal
+
 
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
+console.log(me.favThreefoods[0]); 
+
+console.log(me.favThreefoods[2]); 
 
 
 
@@ -36,6 +53,17 @@ console.log('A little about me:', me);
   - Console.log your updated shoe count. 
 */
 
+console.log(me.shoeCount);
+
+me.shoeCount = 6 
+
+console.log("updated shoe count:", me.shoeCount);
+
+// add 1 to me.shoecount in object literal
+
+
+
+
 
 /* 5. Add a new property to an existing object.
   - Add a 'favoriteColor' to your existing object
@@ -43,3 +71,9 @@ console.log('A little about me:', me);
   - Cool huh? It works, even though it wasn't there before
   - Console.log your object
 */
+
+me.favoriteColor = "green";
+
+console.log(me);
+
+// added new property to me object 
